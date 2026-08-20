@@ -1,0 +1,69 @@
+/* Venturest — design tokens
+   Toda pieza deriva de aquí. No introducir hex fuera de esta lista. */
+
+:root {
+  /* ---- Color ---- */
+  --vt-black: #0C1014;          /* fondo, 80-85% de la pieza */
+  --vt-black-pure: #000000;     /* alternativa cuando se requiere negro absoluto */
+  --vt-gray: #4C4C4C;           /* texto secundario, líneas */
+  --vt-violet: #8B6FB0;         /* acento, <5% del área, un elemento por pieza */
+  --vt-white: #FFFFFF;
+
+  --vt-white-64: rgba(255, 255, 255, 0.64);
+  --vt-white-40: rgba(255, 255, 255, 0.40);
+  --vt-white-12: rgba(255, 255, 255, 0.12);
+  --vt-white-06: rgba(255, 255, 255, 0.06);  /* grid blueprint */
+
+  --vt-glow: radial-gradient(
+    circle at center,
+    rgba(139, 111, 176, 0.34) 0%,
+    rgba(139, 111, 176, 0.14) 42%,
+    rgba(139, 111, 176, 0) 72%
+  );
+
+  /* ---- Tipografía ---- */
+  --vt-font-display: "Geist", "Inter", system-ui, sans-serif;
+  --vt-font-body: "Geist", "Inter", system-ui, sans-serif;
+  --vt-font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --vt-font-accent: "Instrument Sans", serif;   /* italic 300, uso raro */
+
+  /* Geist nunca por encima de 400 */
+  --vt-weight-regular: 400;
+  --vt-weight-mono: 500;
+  --vt-weight-accent: 300;
+
+  /* Escala para lienzo de 1080px */
+  --vt-size-display: 96px;
+  --vt-size-headline: 72px;
+  --vt-size-subhead: 48px;
+  --vt-size-body: 32px;
+  --vt-size-eyebrow: 22px;
+  --vt-size-caption: 18px;
+
+  --vt-leading-tight: 1.05;
+  --vt-leading-body: 1.4;
+
+  --vt-track-display: -0.02em;
+  --vt-track-mono: 0.12em;
+  --vt-track-wordmark: 0.04em;
+
+  /* ---- Layout ---- */
+  --vt-canvas-square: 1080px;
+  --vt-canvas-portrait-w: 1080px;
+  --vt-canvas-portrait-h: 1350px;
+  --vt-canvas-story-w: 1080px;
+  --vt-canvas-story-h: 1920px;
+
+  --vt-margin: 72px;            /* margen de seguridad */
+  --vt-story-top: 240px;        /* zona de UI de Instagram */
+  --vt-story-bottom: 320px;
+
+  --vt-gap-xs: 12px;
+  --vt-gap-sm: 24px;
+  --vt-gap-md: 48px;
+  --vt-gap-lg: 96px;
+
+  --vt-radius: 0px;             /* la marca no usa esquinas redondeadas en piezas */
+  --vt-hairline: 1.5px;
+  --vt-hud-arm: 88px;           /* largo del brazo del marco HUD */
+}
